@@ -10,5 +10,10 @@
   "total_cost_usd": 0.0016488000000000002,
   "average_cost_per_review_usd": 8.244000000000001e-06,
   "input_price_per_million": 0.1,
-  "output_price_per_million": 0.5
+  "output_price_per_million": 0.5,
+  "traditional_model": "TF-IDF unigram + bigram logistic regression",
+  "traditional_accuracy_same_sample": 0.765,
+  "traditional_precision_same_sample": 0.782608695652174,
+  "traditional_recall_same_sample": 0.8035714285714286,
+  "traditional_f1_same_sample": 0.7929515418502202
 }
