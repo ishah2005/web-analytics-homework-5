@@ -24,12 +24,13 @@ OUTPUT_PRICE_PER_MILLION = 0.50
 def classify_review(client, text):
     response = client.responses.create(
         model=MODEL,
+        reasoning={"effort": "none"},
         input=(
             "Classify this movie critic review as fresh or rotten. "
             "Return exactly one lowercase word: fresh or rotten.\n\n"
             f"Review: {text}"
         ),
-        max_output_tokens=3,
+        max_output_tokens=16,
     )
     answer = response.output_text.strip().lower()
     if answer not in {"fresh", "rotten"}:
