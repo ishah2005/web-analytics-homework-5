@@ -19,7 +19,13 @@ The working dataset contains reviews from 1,000 randomly selected movies, with u
 - `llm_compare.py`: classifies a held-out random sample with the cheapest suitable OpenAI model and calculates the exact cost per review.
 - `results/`: saved metrics, held-out data, and visualizations.
 - `homework_5_analysis.ipynb`: complete analysis notebook.
-- `Homework_5_Report.pdf`: final written report.
+- `output/Homework_5_Report_Ishfaq_Shah.pdf`: final written report.
+
+## Final model comparison
+
+- Best traditional model: TF-IDF unigram + bigram logistic regression, 78.36% accuracy and 0.8202 F1.
+- GPT-6 Luna: 92.50% accuracy and 0.9321 F1 on 200 held-out reviews.
+- LLM cost: $0.001649 total, or $0.00000824 per review.
 
 ## Reproducing the analysis
 
