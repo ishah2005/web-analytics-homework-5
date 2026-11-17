@@ -1,8 +1,14 @@
-"""Prepare a reproducible Rotten Tomatoes review dataset for Homework 5."""
+"""Prepare the combined Rotten Tomatoes review dataset for Homework 5.
+
+Pass ``--parser-input`` to clean a CSV produced by collect_reviews.py. Without
+that option, the script rebuilds the committed cached snapshot from its public
+archive source.
+"""
+
+import argparse
 
 from pathlib import Path
 
-import kagglehub
 import pandas as pd
 
 
@@ -14,9 +20,60 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 OUTPUT_FILE = DATA_DIR / "rotten_tomatoes_hw5.csv"
 
+# Direct download of the exact CSV used for the submitted analysis.
+DATA_DOWNLOAD_URL = (
+    "https://raw.githubusercontent.com/ishah2005/web-analytics-homework-5/"
+    "main/data/rotten_tomatoes_hw5.csv"
+)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--parser-input", type=Path)
+    return parser.parse_args()
+
+
+def prepare_parser_output(path):
+    selected = pd.read_csv(path)
+    required = {
+        "rotten_tomatoes_link",
+        "movie_title",
+        "review_type",
+        "review_content",
+    }
+    if not required.issubset(selected.columns):
+        raise ValueError(f"Parser output is missing: {sorted(required - set(selected))}")
+    selected = selected.dropna(subset=["review_content", "review_type"]).copy()
+    selected = selected[selected["review_type"].isin(["Fresh", "Rotten"])]
+    selected["review_content"] = selected["review_content"].astype(str).str.strip()
+    selected = selected[selected["review_content"].str.len() >= 10]
+    selected = selected.drop_duplicates(
+        subset=["rotten_tomatoes_link", "review_content"]
+    )
+    selected["label"] = (selected["review_type"] == "Fresh").astype(int)
+    selected["review_date"] = pd.to_datetime(selected.get("review_date"), errors="coerce")
+    selected["review_length_words"] = selected["review_content"].str.split().str.len()
+    if len(selected) < 10_000 or selected["rotten_tomatoes_link"].nunique() < 500:
+        raise ValueError("Parser output must contain at least 10,000 reviews from 500 movies")
+    # Preserve the collector's stable row order so fixed train/test and LLM
+    # samples remain identical when this cleaned CSV is prepared again.
+    return selected.reset_index(drop=True)
+
 
 def main() -> None:
+    args = parse_args()
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    if args.parser_input:
+        selected = prepare_parser_output(args.parser_input)
+        selected.to_csv(OUTPUT_FILE, index=False)
+        print(f"Saved {len(selected):,} parser-collected reviews to {OUTPUT_FILE}")
+        print(f"Distinct movies: {selected['rotten_tomatoes_link'].nunique():,}")
+        print(f"Submitted dataset download: {DATA_DOWNLOAD_URL}")
+        return
+
+    # Only the cached-snapshot rebuild route needs Kaggle Hub.
+    import kagglehub
 
     dataset_dir = Path(
         kagglehub.dataset_download(
@@ -86,6 +143,7 @@ def main() -> None:
     print(f"Saved {len(selected):,} reviews to {OUTPUT_FILE}")
     print(f"Distinct movies: {selected['rotten_tomatoes_link'].nunique():,}")
     print(selected["review_type"].value_counts().to_string())
+    print(f"Submitted dataset download: {DATA_DOWNLOAD_URL}")
 
 
 if __name__ == "__main__":
