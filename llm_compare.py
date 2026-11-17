@@ -6,7 +6,10 @@ from pathlib import Path
 
 import pandas as pd
 from openai import OpenAI
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+from sklearn.pipeline import Pipeline
 
 
 ROOT = Path(__file__).resolve().parent
@@ -14,11 +17,44 @@ RESULTS_DIR = ROOT / "results"
 SAMPLE_FILE = RESULTS_DIR / "llm_sample.csv"
 OUTPUT_FILE = RESULTS_DIR / "llm_predictions.csv"
 SUMMARY_FILE = RESULTS_DIR / "llm_summary.json"
+TRAIN_FILE = RESULTS_DIR / "train_split.csv"
 
 # Official standard pricing checked November 17, 2026.
 MODEL = "gpt-6-luna"
 INPUT_PRICE_PER_MILLION = 0.10
 OUTPUT_PRICE_PER_MILLION = 0.50
+TRADITIONAL_MODEL_NAME = "TF-IDF unigram + bigram logistic regression"
+
+
+def add_traditional_predictions(results):
+    """Evaluate the best local classifier on the exact reviews sent to the LLM."""
+    train = pd.read_csv(TRAIN_FILE)
+    classifier = Pipeline(
+        [
+            (
+                "tfidf",
+                TfidfVectorizer(
+                    ngram_range=(1, 2),
+                    min_df=3,
+                    max_df=0.95,
+                    sublinear_tf=True,
+                    max_features=150000,
+                ),
+            ),
+            (
+                "model",
+                LogisticRegression(
+                    max_iter=2000,
+                    C=2.0,
+                    class_weight="balanced",
+                    random_state=42,
+                ),
+            ),
+        ]
+    )
+    classifier.fit(train["review_content"], train["label"])
+    results["traditional_prediction"] = classifier.predict(results["review_content"])
+    return results
 
 
 def classify_review(client, text):
@@ -69,6 +105,7 @@ def main():
         results["input_tokens"] / 1_000_000 * INPUT_PRICE_PER_MILLION
         + results["output_tokens"] / 1_000_000 * OUTPUT_PRICE_PER_MILLION
     )
+    results = add_traditional_predictions(results)
     results.to_csv(OUTPUT_FILE, index=False)
 
     summary = {
@@ -86,6 +123,19 @@ def main():
         "average_cost_per_review_usd": float(results["cost_usd"].mean()),
         "input_price_per_million": INPUT_PRICE_PER_MILLION,
         "output_price_per_million": OUTPUT_PRICE_PER_MILLION,
+        "traditional_model": TRADITIONAL_MODEL_NAME,
+        "traditional_accuracy_same_sample": float(
+            accuracy_score(results["label"], results["traditional_prediction"])
+        ),
+        "traditional_precision_same_sample": float(
+            precision_score(results["label"], results["traditional_prediction"])
+        ),
+        "traditional_recall_same_sample": float(
+            recall_score(results["label"], results["traditional_prediction"])
+        ),
+        "traditional_f1_same_sample": float(
+            f1_score(results["label"], results["traditional_prediction"])
+        ),
     }
     SUMMARY_FILE.write_text(json.dumps(summary, indent=2))
     print(json.dumps(summary, indent=2))
