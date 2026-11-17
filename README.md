@@ -19,7 +19,7 @@ The working dataset contains reviews from 1,000 randomly selected movies, with u
 - `llm_compare.py`: classifies a held-out random sample with the cheapest suitable OpenAI model and calculates the exact cost per review.
 - `results/`: saved metrics, held-out data, and visualizations.
 - `homework_5_analysis.ipynb`: complete analysis notebook.
-- `output/Homework_5_Report_Ishfaq_Shah.pdf`: final written report.
+- `output/Ishfaq Shah Homework 5 Report.pdf`: final written report.
 
 ## Final model comparison
 
