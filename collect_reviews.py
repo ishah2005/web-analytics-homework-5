@@ -13,7 +13,7 @@ from rt_scraper import build_browser, scrape_movie
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_MOVIE_LIST = ROOT / "data" / "movie_slugs.csv"
+DEFAULT_MOVIE_LIST = ROOT / "data" / "rotten_tomatoes_hw5.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "parser_collected_reviews.csv"
 
 
@@ -42,6 +42,11 @@ def save_checkpoint(rows, output):
 def main():
     args = parse_args()
     movies = pd.read_csv(args.movie_list)
+    if "movie_slug" not in movies and "rotten_tomatoes_link" in movies:
+        movies["movie_slug"] = movies["rotten_tomatoes_link"].str.replace(
+            r"^m/", "", regex=True
+        )
+    movies = movies.drop_duplicates("movie_slug").reset_index(drop=True)
     required = {"movie_slug", "movie_title"}
     if not required.issubset(movies.columns):
         raise ValueError(f"Movie list must contain columns: {sorted(required)}")
