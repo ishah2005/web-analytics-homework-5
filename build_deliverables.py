@@ -11,6 +11,8 @@ from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     Image,
     PageBreak,
@@ -27,7 +29,10 @@ RESULTS = ROOT / "results"
 FIGURES = RESULTS / "figures"
 OUTPUT = ROOT / "output"
 NOTEBOOK = ROOT / "homework_5_analysis.ipynb"
-PDF = OUTPUT / "Homework_5_Report_Ishfaq_Shah.pdf"
+PDF = OUTPUT / "Ishfaq Shah Homework 5 Report.pdf"
+
+pdfmetrics.registerFont(TTFont("TimesNewRoman", "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf"))
+pdfmetrics.registerFont(TTFont("TimesNewRoman-Bold", "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"))
 
 
 def stream_output(text):
@@ -216,19 +221,21 @@ def build_pdf():
             name="TitleCenter",
             parent=styles["Title"],
             alignment=TA_CENTER,
-            textColor=colors.HexColor("#17365D"),
-            fontSize=22,
-            leading=27,
-            spaceAfter=14,
+            textColor=colors.black,
+            fontName="TimesNewRoman-Bold",
+            fontSize=16,
+            leading=20,
+            spaceAfter=12,
         )
     )
     styles.add(
         ParagraphStyle(
             name="Section",
             parent=styles["Heading1"],
-            textColor=colors.HexColor("#17365D"),
-            fontSize=15,
-            leading=19,
+            textColor=colors.black,
+            fontName="TimesNewRoman-Bold",
+            fontSize=12,
+            leading=15,
             spaceBefore=10,
             spaceAfter=8,
         )
@@ -237,34 +244,38 @@ def build_pdf():
         ParagraphStyle(
             name="Body2",
             parent=styles["BodyText"],
-            fontSize=10.5,
-            leading=15,
+            textColor=colors.black,
+            fontName="TimesNewRoman",
+            fontSize=12,
+            leading=16,
             spaceAfter=8,
+            alignment=0,
         )
     )
     styles.add(
         ParagraphStyle(
             name="Small",
             parent=styles["BodyText"],
-            fontSize=8.5,
-            leading=11,
+            textColor=colors.black,
+            fontName="TimesNewRoman",
+            fontSize=9,
+            leading=12,
         )
     )
 
     doc = SimpleDocTemplate(
         str(PDF),
         pagesize=letter,
-        leftMargin=0.65 * inch,
-        rightMargin=0.65 * inch,
-        topMargin=0.55 * inch,
-        bottomMargin=0.55 * inch,
-        title="Homework 5: Building a Review Classifier",
+        leftMargin=1.0 * inch,
+        rightMargin=1.0 * inch,
+        topMargin=0.75 * inch,
+        bottomMargin=0.75 * inch,
+        title="Ishfaq Shah Homework 5 Report",
         author="Ishfaq Shah",
     )
 
     story = [
-        Paragraph("Homework 5: Building a Review Classifier", styles["TitleCenter"]),
-        Paragraph("Ishfaq Shah | Web Analytics | Professor Apostolos Filippas", styles["Body2"]),
+        Paragraph("Ishfaq Shah<br/>Homework 5<br/>Web Analytics", styles["TitleCenter"]),
         Paragraph("1. Dataset and Method", styles["Section"]),
         Paragraph(
             "This project predicts whether a Rotten Tomatoes critic review is Fresh or Rotten. "
@@ -317,12 +328,12 @@ def build_pdf():
     table.setStyle(
         TableStyle(
             [
-                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#17365D")),
-                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("BACKGROUND", (0, 0), (-1, -1), colors.white),
+                ("TEXTCOLOR", (0, 0), (-1, -1), colors.black),
+                ("FONTNAME", (0, 0), (-1, 0), "TimesNewRoman-Bold"),
+                ("FONTNAME", (0, 1), (-1, -1), "TimesNewRoman"),
                 ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#EEF3F8")]),
-                ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#AAB7C4")),
+                ("GRID", (0, 0), (-1, -1), 0.75, colors.black),
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
                 ("ALIGN", (1, 1), (-1, -1), "CENTER"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 5),
@@ -344,7 +355,7 @@ def build_pdf():
                 "Fresh class, while the improved model produced a more balanced precision-recall tradeoff.",
                 styles["Body2"],
             ),
-            Image(str(FIGURES / "model_comparison.png"), width=6.85 * inch, height=3.75 * inch),
+            Image(str(FIGURES / "model_comparison.png"), width=6.3 * inch, height=3.45 * inch),
             PageBreak(),
             Paragraph("3. Exploratory Data Analysis", styles["Section"]),
             Paragraph(
@@ -440,10 +451,10 @@ def build_pdf():
 
     def footer(canvas, doc):
         canvas.saveState()
-        canvas.setFont("Helvetica", 8)
-        canvas.setFillColor(colors.HexColor("#6B7785"))
-        canvas.drawString(0.65 * inch, 0.32 * inch, "Ishfaq Shah - Web Analytics Homework 5")
-        canvas.drawRightString(7.85 * inch, 0.32 * inch, f"Page {doc.page}")
+        canvas.setFont("TimesNewRoman", 9)
+        canvas.setFillColor(colors.black)
+        canvas.drawString(1.0 * inch, 0.4 * inch, "Ishfaq Shah - Web Analytics Homework 5")
+        canvas.drawRightString(7.5 * inch, 0.4 * inch, f"Page {doc.page}")
         canvas.restoreState()
 
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
