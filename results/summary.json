@@ -1,0 +1,17 @@
+{
+  "reviews": 50000,
+  "movies": 1000,
+  "fresh_reviews": 30755,
+  "rotten_reviews": 19245,
+  "fresh_rate": 0.6151,
+  "median_review_words": 21.0,
+  "train_reviews": 40000,
+  "test_reviews": 10000,
+  "train_movies": 800,
+  "test_movies": 200,
+  "best_model": "Unigram + bigram TF-IDF + logistic regression",
+  "best_accuracy": 0.7836,
+  "best_f1": 0.8202060485211033,
+  "early_fresh_rate": 0.61404,
+  "late_fresh_rate": 0.61616
+}
