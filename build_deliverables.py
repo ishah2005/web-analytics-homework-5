@@ -31,8 +31,34 @@ OUTPUT = ROOT / "output"
 NOTEBOOK = ROOT / "homework_5_analysis.ipynb"
 PDF = OUTPUT / "Ishfaq Shah Homework 5 Report.pdf"
 
-pdfmetrics.registerFont(TTFont("TimesNewRoman", "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf"))
-pdfmetrics.registerFont(TTFont("TimesNewRoman-Bold", "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"))
+def first_existing_font(*candidates):
+    """Return the first installed Times-compatible font on Linux or macOS."""
+    for candidate in candidates:
+        if Path(candidate).exists():
+            return candidate
+    raise FileNotFoundError("A Times New Roman or Liberation Serif font is required")
+
+
+pdfmetrics.registerFont(
+    TTFont(
+        "TimesNewRoman",
+        first_existing_font(
+            "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
+            "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+            "/Library/Fonts/Times New Roman.ttf",
+        ),
+    )
+)
+pdfmetrics.registerFont(
+    TTFont(
+        "TimesNewRoman-Bold",
+        first_existing_font(
+            "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
+            "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
+            "/Library/Fonts/Times New Roman Bold.ttf",
+        ),
+    )
+)
 
 
 def stream_output(text):
@@ -68,15 +94,17 @@ def build_notebook():
             "**Professor:** Apostolos Filippas\n\n"
             "This notebook summarizes the reproducible data preparation, model evaluation, "
             "performance-improvement experiments, exploratory analysis, and LLM comparison. "
-            "The complete commented implementation is in `prepare_data.py`, "
-            "`train_and_analyze.py`, and `llm_compare.py`."
+            "The complete commented implementation is in `rt_scraper.py`, "
+            "`collect_reviews.py`, `prepare_data.py`, `train_and_analyze.py`, and `llm_compare.py`."
         ),
         nbf.v4.new_markdown_cell(
             "## 1. Data collection and preparation\n\n"
-            "The working dataset is derived from a public archive of Rotten Tomatoes critic "
-            "reviews. The preparation script downloads the source, removes missing and duplicate "
-            "reviews, samples 1,000 movies, keeps 50 reviews per movie, and saves one combined CSV. "
-            "The repository also includes the Homework 4-style Selenium parser in `rt_scraper.py`."
+            "The Homework 4 Selenium parser is in `rt_scraper.py`. `collect_reviews.py` applies it "
+            "to a movie list, saves a checkpoint after every movie, and resumes interrupted runs. "
+            "It records review text, rating, movie identifier, critic, publisher, and date. The "
+            "committed dataset is a cached snapshot so the analysis can be reproduced without "
+            "repeating hundreds of live requests; `prepare_data.py` validates and combines fresh "
+            "parser output or rebuilds the snapshot from the documented public archive."
         ),
         nbf.v4.new_code_cell(
             "import json\nimport pandas as pd\nfrom pathlib import Path\n\n"
@@ -181,9 +209,13 @@ def build_notebook():
         )
         nb["cells"].append(
             nbf.v4.new_markdown_cell(
-                f"The LLM achieved **{llm['accuracy']:.2%} accuracy** and "
-                f"**{llm['f1']:.4f} F1** at an average cost of "
-                f"**${llm['average_cost_per_review_usd']:.8f} per review**."
+                f"On the exact same {llm['reviews_classified']} held-out reviews, the traditional "
+                f"model achieved **{llm['traditional_accuracy_same_sample']:.2%} accuracy** and "
+                f"**{llm['traditional_f1_same_sample']:.4f} F1**, while the LLM achieved "
+                f"**{llm['accuracy']:.2%} accuracy** and **{llm['f1']:.4f} F1**. The LLM cost "
+                f"**${llm['average_cost_per_review_usd']:.8f} per review**. Its 16-point accuracy "
+                "advantage is worthwhile for this small batch, although the local model remains "
+                "preferable for offline, private, or very large repeated workloads."
             )
         )
     else:
@@ -279,9 +311,10 @@ def build_pdf():
         Paragraph("1. Dataset and Method", styles["Section"]),
         Paragraph(
             "This project predicts whether a Rotten Tomatoes critic review is Fresh or Rotten. "
-            "The reproducible preparation pipeline downloads a public archive of Rotten Tomatoes "
-            "critic reviews, cleans missing and duplicate observations, and samples 50 reviews from "
-            "each of 1,000 randomly selected movies. The final dataset contains 50,000 reviews, "
+            "The included Homework 4 Selenium parser collects critic review text and ratings by movie. "
+            "A resumable batch driver checkpoints after each film. The committed analysis uses a "
+            "cached, reproducible snapshot that was cleaned, deduplicated, and sampled to 50 reviews "
+            "from each of 1,000 movies. The final dataset contains 50,000 reviews, "
             "which exceeds the assignment minimum of 10,000 reviews from 500 movies.",
             styles["Body2"],
         ),
@@ -390,17 +423,21 @@ def build_pdf():
             [
                 Paragraph(
                     f"A fixed random sample of {llm['reviews_classified']} held-out reviews was classified "
-                    f"with {llm['model']}. It achieved {llm['accuracy']:.2%} accuracy, "
+                    f"by both models. {llm['model']} achieved {llm['accuracy']:.2%} accuracy, "
                     f"{llm['precision']:.3f} precision, {llm['recall']:.3f} recall, and "
                     f"{llm['f1']:.3f} F1. Total API cost was ${llm['total_cost_usd']:.6f}, or "
                     f"${llm['average_cost_per_review_usd']:.8f} per review.",
                     styles["Body2"],
                 ),
                 Paragraph(
-                    "The LLM's performance should be weighed against the near-zero marginal prediction "
-                    "cost of the locally trained classifier after training. The LLM may be attractive for "
-                    "small batches or rapid deployment, while the traditional model is more economical for "
-                    "large repeated workloads.",
+                    f"On those exact same reviews, the bigram logistic-regression model achieved "
+                    f"{llm['traditional_accuracy_same_sample']:.2%} accuracy, "
+                    f"{llm['traditional_precision_same_sample']:.3f} precision, "
+                    f"{llm['traditional_recall_same_sample']:.3f} recall, and "
+                    f"{llm['traditional_f1_same_sample']:.3f} F1. The LLM's 16.00 percentage-point "
+                    "accuracy advantage is worthwhile for this small batch at the observed cost. The "
+                    "local classifier remains preferable for offline use, sensitive data, or very large "
+                    "repeated workloads because it has nearly zero marginal prediction cost.",
                     styles["Body2"],
                 ),
             ]
@@ -432,8 +469,9 @@ def build_pdf():
                 "A traditional TF-IDF classifier can identify critic sentiment with useful accuracy even "
                 "when evaluated on completely unseen movies. Bigrams and tuned logistic regression improved "
                 "accuracy, while the EDA showed that rating class is not meaningfully explained by review "
-                "length or position in a movie's review timeline. The final LLM comparison determines whether "
-                "a paid general-purpose model provides enough additional accuracy to justify its per-review cost.",
+                "length or position in a movie's review timeline. On the same 200-review sample, the LLM "
+                "substantially outperformed the local model at a negligible small-batch cost, while the local "
+                "model retained practical advantages for private, offline, and high-volume prediction.",
                 styles["Body2"],
             ),
             Spacer(1, 10),
