@@ -1,0 +1,201 @@
+rotten_tomatoes_link,movie_title,review_content,label,llm_prediction_text,llm_prediction,input_tokens,output_tokens,cost_usd
+m/down_in_the_valley,Down in the Valley,"Both actors work hard to give this disturbing crime story some flavor and substance, but the narrative is overextended and poorly organized.",0,rotten,0,54,6,8.400000000000001e-06
+m/annie_2012,Annie,"Co-producers Will Smith and Jay Z shook up the classic 1982 movie-musical and turned it into a slick, out-of-tune miss that's desperately aching to be hip.",0,rotten,0,66,6,9.600000000000001e-06
+m/mona_lisa_smile,Mona Lisa Smile,"With Katherine's lectures on the dead-artists society, the movie seems to tout rebellious originality. In fact, it's a lesson in emotional conformity.",0,rotten,0,58,6,8.8e-06
+m/1408,1408,"You'll want to check out room ""1408.""That is, if you like a solid horror story, fine performances and Stephen King tales.",1,fresh,1,57,5,8.200000000000001e-06
+m/cinderella_story,A Cinderella Story,"Anyone who's not already a Duff fan should stay away. And given the lack of energy and innovation at work here, even fans may find this one redundant and lackluster.",0,rotten,0,64,6,9.4e-06
+m/beyond_the_sea,Beyond the Sea,"Doing his own singing, Spacey is a marvel.",1,fresh,1,40,5,6.5000000000000004e-06
+m/september_issue,The September Issue,It's kind of irresistible.,1,fresh,1,34,5,5.9e-06
+m/1130191-reckoning,The Reckoning,"Overstuffed and, in its own way, preachy.",0,rotten,0,42,6,7.2e-06
+m/trollhunter,Trollhunter,"As the stoic titular slayer, Otto Jespersen is the one actor who holds you.",1,rotten,0,49,6,7.9e-06
+m/the_traitor_2020,The Traitor,No courtroom drama has ever been this wild or bombastic.,1,fresh,1,41,5,6.600000000000001e-06
+m/cars_3,Cars 3,"At this point it seems like too much to hope for that any Pixar sequel, let alone a Cars sequel, should function smoothly from start to finish, but at least it ends well.",1,rotten,0,66,6,9.600000000000001e-06
+m/left_behind_2014,Left Behind,"""Left Behind"" is terrible because it's poorly written, flat in tone and generally pandering to the faithful by not offering any complexity whatsoever.",0,rotten,0,57,6,8.700000000000001e-06
+m/1097046-dinosaur,Dinosaur,A distressingly lifeless concoction.,0,rotten,0,37,6,6.7e-06
+m/the_housemaid,The Housemaid,"This is an enjoyable film that looks impressive, is technically accomplished and is suitably sexually charged. However, its social inequality message is very heavy-handed.",1,fresh,1,58,5,8.3e-06
+m/butcher_boy,The Butcher Boy,A triumph on all counts.,1,fresh,1,35,5,6e-06
+m/domino,Domino,"a twisted head spinner of a biopic, where myth is always racing hot on the heels of a fugitive reality.",1,fresh,1,53,5,7.8e-06
+m/the_santa_clause_2,The Santa Clause 2,...hopefully it'll be at the dollar theatres by the time Christmas rolls around. Wait to see it then.,0,rotten,0,50,6,8.000000000000001e-06
+m/a_man_called_ove,A Man Called Ove (En man som heter Ove),"The film is funny, surprising, moving, and even romantic as it unspools Ove's story.",1,fresh,1,51,5,7.6e-06
+m/miss_potter,Miss Potter,"Missing that childlike love for nature and animals that Beatrix must have had, and in turn, forgets what it's like to have an imagination.",0,rotten,0,59,6,8.9e-06
+m/1202804-green_zone,Green Zone,"A fast pace, a nagging mystery and bone-crunching action captured with director Paul Greengrass' signature hand-held camera and rapid-fire editing.",1,fresh,1,60,5,8.5e-06
+m/to_rome_with_love,To Rome with Love,"Woody lite, this pretty string of short stories is uneven, landing it nowhere near Allen's best or his worst.",1,rotten,0,52,6,8.2e-06
+m/1194515-ice_age_dawn_of_the_dinosaurs,Ice Age: Dawn of the Dinosaurs (Ice Age 3),"Whereas the previous chapters were sweetly anarchic, full of wisecracks and narrative digressions but also curious about eco-issues such as global warming and the extinction of species, this effort is dramatically inert and uninspired.",0,rotten,0,75,6,1.05e-05
+m/country_bears,The Country Bears,"If you're looking to take your children to something harmless, that doesn't embarrass anyone, this light comedy ... is your next outing.",1,fresh,1,55,5,8.000000000000001e-06
+m/adoration,Adoration,"Adoration is a triumph, a provocative work about terror in the world and in people's hearts.",1,fresh,1,48,5,7.300000000000001e-06
+m/men_in_black_ii,Men in Black II,"This sequel to ""Men in Black"" has all the great creepy aliens, great conspiratorial camaraderie and great wild chases expected with this film, but somehow it's all over before you want it to be.",1,fresh,1,71,5,9.600000000000001e-06
+m/elektra,Elektra,"Resembles nothing so much as a dumbed-down, PG-13 version of Kill Bill, put together by a team tone-deaf to bad dialogue, atrocious acting, cheesy special effects and clumsily staged action sequences.",0,rotten,0,76,6,1.06e-05
+m/tears_of_the_sun,Tears of the Sun,"More brutally evil than Hitler's SS, the Nigerian rebels are about as one-sided a depiction of enemy soldiers you're apt to find this side of a John Wayne war movie. It's unsettling, and in the light of current events, almost unacceptable.",0,rotten,0,77,6,1.0700000000000001e-05
+m/beyond_the_sea,Beyond the Sea,"This is one of those rare movies that's so bad it's good, with lavish production numbers in which Spacey sings out of sync with the voice track and dances out of sync with his own feet.",0,rotten,0,68,6,9.800000000000001e-06
+m/sisterhood_of_the_traveling_pants_2,The Sisterhood of the Traveling Pants 2,"Even cynics might concede that, again, four capable actresses have pulled off a relatively rare thing: They've convinced us they're an honest-to-God movie sisterhood.",1,fresh,1,62,5,8.700000000000001e-06
+m/1103231-gift,The Gift,There are few things better than watching a director in complete control.,1,fresh,1,42,5,6.7e-06
+m/in_secret,In Secret,"Spellbinding, intelligent and suspenseful. Jessica Lange, one of the greatest actresses of our time, delivers a mesmerizing, magnificent performance.",1,fresh,1,56,5,8.1e-06
+m/what_to_expect_when_youre_expecting,What to Expect When You're Expecting,The few moments of cuteness and heart can't make up for the rest of the parts that just plain suck.,0,rotten,0,51,6,8.1e-06
+m/bubba_ho_tep,Bubba Ho-Tep,"Kitschy, lowbrow, and aggressively low-budget; a one-of-a-kind film experience.",1,fresh,1,49,5,7.4e-06
+m/valentines_day_2010,Valentine's Day,Valentine's Day is a date movie from hell. How did director Garry Marshall persuade a big name cast to stuff themselves into this box of rancid heart-shaped chocolates?,0,rotten,0,62,6,9.2e-06
+m/titan_ae,Titan A.E.,Little substance beyond one or two nifty visual sequences.,0,rotten,0,39,6,6.9e-06
+m/darjeeling_limited,The Darjeeling Limited,"A precious, self-admiring and fatally misjudged serio-comedy.",0,rotten,0,46,6,7.6e-06
+m/1151916-1151916-nine_lives,Nine Lives,"Not all of Nine Lives clicks, but at its best it finds an inarticulate sisterly solace that makes you want to see what this director could do with one life per film.",1,fresh,1,67,5,9.2e-06
+m/serving_sara,Serving Sara,There are many definitions of 'time waster' but this movie must surely be one of them.,0,rotten,0,49,6,7.9e-06
+m/zookeeper,Zookeeper,"Despite a good moral, it has too much adult-oriented dialogue and situations for children and it's too stupid for adults.",0,rotten,0,52,6,8.2e-06
+m/rush_2013,Rush,One of the best films this year - or any year. Certainly the finest film about auto racing I've seen because it focuses on the human element.,1,fresh,1,58,5,8.3e-06
+m/wild_target,Wild Target,A mostly admirable attempt at a Crichton-like escapade that runs out of steam a bit before half-way.,0,fresh,1,52,5,7.7e-06
+m/sleepy_hollow,Sleepy Hollow,"It is a horror film, but it's a Tim Burton horror film. Make no mistake about that.",1,fresh,1,49,5,7.4e-06
+m/hit_and_run_2012,Hit & Run,"There's the suggestion of a good comedy filmmaker here, but in trying out too many genres in one film Shepard winds up with something that never settles or fully engages.",0,rotten,0,61,6,9.100000000000001e-06
+m/domino,Domino,"Scott never takes his finger off the remix button, meaning scenes play out in microflashes and dialogue is chopped and scratched like a beatmixing jock cutting loose on his first day at DJ school.",0,rotten,0,70,6,9.999999999999999e-06
+m/what_to_expect_when_youre_expecting,What to Expect When You're Expecting,"Not quite as bad as NEW YEAR'S EVE- but still not very good. Other than good performances by Anna Kendrick and Elizabeth Banks, don't expect much.",0,rotten,0,61,6,9.100000000000001e-06
+m/hesher,Hesher,"Hesher's such a mystery that he seems like a device (bong hits with Grandma, really?), and the same goes double for [Portman's character].",0,rotten,0,61,6,9.100000000000001e-06
+m/wadjda_2013,Wadjda,"You'd need a heart of stone not to be won over by Wadjda, a rebel yell with a spoonful of sugar and a pungent sense of a Riyadh society split between the home, the madrasa and the shopping mall.",1,fresh,1,78,5,1.03e-05
+m/charlie_countryman,Charlie Countryman,"Trite indie-hipster exercise in blending romance, violence, and quirk.",0,rotten,0,45,6,7.5e-06
+m/moonlight_2016,Moonlight,"In Moonlight, Barry Jenkins charts an intimate portrait of the plight of young African-American men and nods to the influence of spirituals in the African-American tradition of the Blues.",1,fresh,1,65,5,9e-06
+m/duplicity_2009,Duplicity,Tony Gilroy's directorial follow up to the phenomenal Michael Clayton is an impressive addition to his short but impressive filmography.,1,fresh,1,54,5,7.9e-06
+m/runaway_jury,Runaway Jury,"Certainly not awful and definitely not excellent, Runaway Jury should please fans of the Courtroom Genre and those who admire the varied talents of Cusack, Hoffman and (especially) Hackman.",1,fresh,1,67,5,9.2e-06
+m/my_little_pony_the_movie_2017,My Little Pony: The Movie,"The animation is certainly richer than the traditional flatness of the regular series, but you have to wonder to what use it's being put.",0,rotten,0,56,6,8.6e-06
+m/rush_2013,Rush,"Stripped-down characters and skeletal dramaturgy limit this movie about the real-life Formula 1 racing rivalry of James Hunt and Niki Lauda, but harrowing track scenes and an affecting second half provide some vivid compensation.",1,fresh,1,73,5,9.800000000000001e-06
+m/blue_velvet,Blue Velvet,"Three decades after its initial release, David Lynch's Blue Velvet has lost none of its power to derange, terrify, and exhilarate.",1,fresh,1,58,5,8.3e-06
+m/1196221-quarantine,Quarantine,"Good news for those who missed the Spanish zombie horror [REC] when it opened here a few months back. Here comes the inevitable fast-tracked Hollywood remake, which covers the same ground without the burden of all those subtitled hysterics.",0,rotten,0,77,6,1.0700000000000001e-05
+m/1112954-rookie,The Rookie,"At two-+ hours, The Rookie is a good 20 minutes too long, but for father-son teams waiting eagerly for the umpire's ""Play ball!"", it's an uplifting season opener.",1,fresh,1,68,5,9.3e-06
+m/rocknrolla,RocknRolla,"A very slick, sophisticated plot with some well-written characters.",1,fresh,1,41,5,6.600000000000001e-06
+m/duplicity_2009,Duplicity,"On the simplest level, Duplicity is a tribute to the power of performance.",1,fresh,1,46,5,7.1e-06
+m/luce,Luce,A strong cast carries the story's burdens with powerful conviction.,1,fresh,1,41,5,6.600000000000001e-06
+m/jay_and_silent_bob_strike_back,Jay and Silent Bob Strike Back,"After the agony of sitting through American Pie 2 and Rat Race within a week of each other, it's gratifying to see a comedy can have no redeeming social value yet be full of hearty laughs.",1,fresh,1,69,5,9.4e-06
+m/fear_and_loathing_in_las_vegas,Fear and Loathing in Las Vegas,What the movie lacks in plot it makes up for in irony.,1,fresh,1,42,5,6.7e-06
+m/258,My Soul to Take,It's too mild-mannered for those who relish horror pictures and too gory and plotless and chatty for everyone else.,0,rotten,0,55,6,8.5e-06
+m/1200661-informant,The Informant!,"Creo que en manos de unos cineastas como los hermanos Coen, por ejemplo, el resultado sería infinitamente más divertido.",1,rotten,0,54,6,8.400000000000001e-06
+m/beirut,Beirut,"Gilroy paints a nuanced picture of the civil conflict in Lebanon, noting the U.S. and Israeli agendas at work and the inner tensions of the PLO, yet this information serves to clarify and accelerate the action.",1,fresh,1,72,5,9.7e-06
+m/evelyn,Evelyn,"Good-looking, well-acted and now and then shamelessly sentimental paean to perseverance, spirit and Irish humor.",1,fresh,1,53,5,7.8e-06
+m/three_identical_strangers,Three Identical Strangers,Wardle gradually zooms out to show the devastation wrought upon their lives is both heartbreaking and chilling.,1,fresh,1,49,5,7.4e-06
+m/cop_land,Cop Land,"Top acting honors go to Ray Liotta as Gary Figgis, a cokehead cop who just might be Freddy's only friend.",1,fresh,1,55,5,8.000000000000001e-06
+m/the_prophet_2014,Kahlil Gibran's The Prophet,A consortium of animators bring ample visual splendor and life to Gibran's words of wisdom.,1,fresh,1,50,5,7.500000000000001e-06
+m/tears_of_the_sun,Tears of the Sun,"Jesus, how did they drag this thing out to two hours?",0,rotten,0,42,6,7.2e-06
+m/miss_potter,Miss Potter,"It's worthy and beautifully produced, but it feels like a fantasy rather than the truth.",1,rotten,0,46,6,7.6e-06
+m/wadjda_2013,Wadjda,"There are important films and there are good films, and the two do not necessarily always overlap. Wadjda is both important and very, very good.",1,fresh,1,60,5,8.5e-06
+m/cars_3,Cars 3,"It's basically one long training montage, from about ten minutes in until ten minutes from the end.",0,rotten,0,48,6,7.8e-06
+m/1202804-green_zone,Green Zone,I'd likely be damning Green Zone for facile political messages if it weren't for the fact that more than a fair share of people out there are in desperate need of them.,1,fresh,1,63,5,8.8e-06
+m/me_and_you_and_everyone_we_know,Me and You and Everyone We Know,The sparks of brilliance littered throughout Miranda July's debut feature are just thatsparks.,0,rotten,0,49,6,7.9e-06
+m/evening,Evening,There's a better movie somewhere inside this saccharine weepy that telegraphs its melodramatics with shameless glee.,0,rotten,0,54,6,8.400000000000001e-06
+m/civil_action,A Civil Action,The film is so daring because it features a protagonist that we cannot and do not sympathize with.,1,fresh,1,49,5,7.4e-06
+m/phoenix_2015,Phoenix,"Petzold and Farocki essentially revive the lost tradition of the Trümmerfilm, engaging with and retroactively contributing to this undersung period of German film history.",1,fresh,1,64,5,8.9e-06
+m/frozen_2013,Frozen,Frozen is Disney's latest entrant into its classic fairy-tale animation history and mostly lives up to its formidable ancestry even as it tweaks said ancestry's nose.,1,fresh,1,60,5,8.5e-06
+m/i_lost_my_body,I Lost My Body,"Simply put, Naoufel is a creep. . . . And let's be clear: Clapin and Guillaume Laurent's script doesn't condemn this behavior. It enables it, then romanticizes it.",0,rotten,0,68,6,9.800000000000001e-06
+m/wadjda_2013,Wadjda,This delightful debut feature by a Saudi woman named Haifaa Al-Mansour uses a bicycle as a metaphor for freedom within a social circumference.,1,fresh,1,58,5,8.3e-06
+m/how_i_live_now,How I Live Now,"No matter how cheesy the romance (and, yes, it does get distractingly cheesy in parts), Daisy's vision as Edmond as the key to her salvation makes ""How I Live Now"" not so much a form of escapism as an ode to its powers.",1,fresh,1,82,5,1.0700000000000001e-05
+m/1196221-quarantine,Quarantine,Horror movie fans can enjoy the visceral experience. The core purpose %u2013 to make people jump out of their seats %u2013 is executed with intense precision.,1,fresh,1,63,5,8.8e-06
+m/deck_the_halls,Deck the Halls,"has no real heart and certainly not a trace of warmth. You may leave the theater with a strong desire not to decorate a tree, but to deck the person who talked you into seeing this turkey.",0,rotten,0,69,6,9.9e-06
+m/the_hunting_of_the_president,The Hunting of the President,"This is a cautionary tale that needs to be told, about how a truly unsavory group of characters almost staged a legal coup d'etat. It's scary stuff.",1,fresh,1,64,5,8.9e-06
+m/i_lost_my_body,I Lost My Body,"The movie abounds with imagination, but is unfortunately too unnerving - even nauseating - to enjoy.",0,rotten,0,50,6,8.000000000000001e-06
+m/258,My Soul to Take,"Might not be Wes Craven's best film, but it's certainly his worst.",0,rotten,0,45,6,7.5e-06
+m/queen_and_country,Queen and Country,"Tonally, the movie can't decide whether it's a comedy, a romance, or a wistful wartime madeleine. What it's missing is the sense of joy and wonder of its predecessor.",0,rotten,0,67,6,9.7e-06
+m/melancholia_2011,Melancholia,"Imaginative and apocalyptic, it's perhaps more admirable than enjoyable.",1,fresh,1,43,5,6.800000000000001e-06
+m/john_dies_at_the_end,John Dies at the End,Horror-comedy from Phantasm director starts with a bang but quickly loses speed.,0,rotten,0,46,6,7.6e-06
+m/spy_kids_2_island_of_lost_dreams,Spy Kids 2: The Island of Lost Dreams,"The movie is a gaudy, noisy thrill ride -- hyperactive, slightly out of control and full of kinetic, mischievous charm.",1,fresh,1,57,5,8.200000000000001e-06
+m/show_dogs,Show Dogs,"Mix... genital obsession with bad CGI, unrelenting references to Lego Batman, and a general sense of malaise, and you have a pretty complete picture of what Show Dogs has to offer.",0,rotten,0,68,6,9.800000000000001e-06
+m/fear_and_loathing_in_las_vegas,Fear and Loathing in Las Vegas,"Years from now, it will be reappraised as a misunderstood masterpiece. Well, this is one American critic who's not waiting until years from now.",1,fresh,1,59,5,8.400000000000001e-06
+m/how_i_live_now,How I Live Now,It's tough to forget Saoirse Ronan's three 2013 stinkers for long during How I Live Now.,0,rotten,0,52,6,8.2e-06
+m/queen_and_country,Queen and Country,"... the beginning, middle and end of the film are delicious and entertaining at the time but leave no lasting impression or longing for more.",1,rotten,0,56,6,8.6e-06
+m/10011774-chloe,Chloe,"More slick, less subtle but still enjoyably barmy remake.",1,fresh,1,42,5,6.7e-06
+m/post_tenebras_lux_2012,Post Tenebras Lux,It pains us to say that Post Tenebras Lux leaves you in a state of chilly bemusement rather than breathless rapture.,0,rotten,0,56,6,8.6e-06
+m/american_in_paris,An American in Paris,"How can one go wrong with Gershwin, Gene Kelly, and this Oscar winner?",1,fresh,1,47,5,7.2000000000000005e-06
+m/a_most_wanted_man,A Most Wanted Man,"The great pleasure of le Carré-land - for some, it's the frustration - is that one's own moral certainties are quickly stood on their head.",1,fresh,1,59,5,8.400000000000001e-06
+m/queen_and_country,Queen and Country,"Queen and Country finds exhilarating comedy in places usually reserved for drama, violence, loss.",1,fresh,1,46,5,7.1e-06
+m/evening,Evening,"Even the film's obvious and shallow moments appear haunting, evocative and profound when filtered through this sunrise-to-sunset through-line.",1,fresh,1,55,5,8.000000000000001e-06
+m/my_cousin_rachel_2017,My Cousin Rachel,"... achieves a modest tension through its unsettling atmosphere, although there's a general predictability to the story that undermines the mystery and can't be erased by a few jolting twists.",0,rotten,0,64,6,9.4e-06
+m/the_catcher_was_a_spy,The Catcher Was A Spy,"Moe Berg was a Boston Red Sox, Princeton grad, fluent in seven languages, and a patriot who spied for the U.S. military as a hobby. He was many things. But was he gay? You decide.",0,rotten,0,74,6,1.04e-05
+m/the_strangers_prey_at_night,The Strangers: Prey At Night,"I can see it's just meant to be a bit of harmless(!) fun, but I just found it to be lacking in any form of imagination.",0,rotten,0,59,6,8.9e-06
+m/simone_2002,Simone,"Not a bad movie, just an unambitious one.",0,rotten,0,41,6,7.100000000000001e-06
+m/september_issue,The September Issue,"A documentary portraying the Vogue editor's preparations for her biggest issue, and it demonstrates that if anything, Streep toned Wintour down.",1,fresh,1,57,5,8.200000000000001e-06
+m/the_strangers_prey_at_night,The Strangers: Prey At Night,The plot is extremely weak.,0,rotten,0,35,6,6.5000000000000004e-06
+m/beirut,Beirut,"Beirut is not a deft character study. It's not a heart-pumping, thrill-a-second action flick either. It languishes somewhere in the middle, making it a mildly frustrating viewing experience.",0,rotten,0,67,6,9.7e-06
+m/10004504-ultraviolet,Ultraviolet,The special effects simply thrust Ultraviolet in an Xbox 360 for action set-pieces that are kinetic and colorful but surprisingly unexciting. Do we really care if she dies when she's just going to be regenerated anyway?,0,rotten,0,74,6,1.04e-05
+m/afghan_star,Afghan Star,This is about an Afghan culture that is at a real turning point.,1,fresh,1,43,5,6.800000000000001e-06
+m/spy_kids_2_island_of_lost_dreams,Spy Kids 2: The Island of Lost Dreams,"How fitting that the subtitle of this sequel is Island of Lost Dreams, for Rodriguez has let his vivid imagination run even more amok in waking, cinematic life.",1,fresh,1,61,5,8.6e-06
+m/hancock,Hancock,"Silly? Sure. However, when Smith's not trying to win Oscars he's practically perfected the art of selling silliness at the box-office.",0,fresh,1,58,5,8.3e-06
+m/happy_endings,Happy Endings,"It's hard to dislike Don Roos' Magnolia-inspired triptych of interconnected comic tales about lies, sex and video.",1,fresh,1,52,5,7.7e-06
+m/the_strangers_prey_at_night,The Strangers: Prey At Night,"Aside from the quick setup introducing the targets, The Strangers: Prey at Night really is a nonstop thrill ride... I was breathless from start to finish.",1,fresh,1,62,5,8.700000000000001e-06
+m/countdown_2019,Countdown,It may not be re-inventing the wheel in regards to originality...but those looking for a scary movie to see with a group of friends will be in for a real treat.,1,fresh,1,66,5,9.100000000000001e-06
+m/far_from_heaven,Far From Heaven,Deftly navigates the line between high art and mainstream entertainment.,1,fresh,1,43,5,6.800000000000001e-06
+m/the_holiday,The Holiday,"Because everyone is rich and in love, you can see the happy ending coming a mile away, but with a film like this, it's the journey that's important and not the destination.",1,fresh,1,65,5,9e-06
+m/hancock,Hancock,"If you thought you were in for something light-hearted, prepare yourself for more superhero angst than Batman Begins and Hulk combined.",0,rotten,0,53,6,8.3e-06
+m/runaway_jury,Runaway Jury,"While I enjoyed Runaway Jury while watching it, its themes and performances didn't stay with me.",1,rotten,0,48,6,7.8e-06
+m/hesher,Hesher,"Rather than a character rooted in some sort of reality -- social, satirical, psychological, take your pick -- Hesher is an abstract notion animated by false energy.",0,rotten,0,62,6,9.2e-06
+m/1196003-princess_and_the_frog,The Princess and the Frog,"Few films can simultaneously celebrate the future and the past of animation, but this one does.",1,fresh,1,47,5,7.2000000000000005e-06
+m/think_like_a_man_too,Think Like a Man Too,"Still, there exists unmistakable cast chemistry, a few laughs and a solid enough hour.",0,fresh,1,47,5,7.2000000000000005e-06
+m/harpoon_2019,Harpoon,Harpoon manages to remain tense and highly watchable throughout and is an altogether smarter and more accomplished film than your standard modern B-movie offering.,1,fresh,1,58,5,8.3e-06
+m/down_in_the_valley,Down in the Valley,Down in the Valley doesn't work. But in failing it's twice as interesting as an unambitious success.,0,rotten,0,50,6,8.000000000000001e-06
+m/tomorrow_never_dies,Tomorrow Never Dies,"Brosnan cements his reputation as the best James Bond since Sean Connery, and sometimes he even gives the master a run for his money.",1,fresh,1,58,5,8.3e-06
+m/john_dies_at_the_end,John Dies at the End,"It's woefully uneven and overly ambitious, but this silly and amusing nonsense is destined for midnight-movie and frat-house cult status.",1,fresh,1,56,5,8.1e-06
+m/civil_action,A Civil Action,"Travolta may not be perfectly cast as jaded attorney Jan, and does not make this role his own, but still carries the film rather well, and I can't complain.",1,fresh,1,64,5,8.9e-06
+m/the_housemaid,The Housemaid,"The graphic sex scenes radiate an uncommon heat, and Im can pull off a hugely effective shock when he wants to.",1,fresh,1,53,5,7.8e-06
+m/1151916-1151916-nine_lives,Nine Lives,A disturbingly frank look at people and relationships in contemporary Los Angeles and a thrilling dramatic showcase for a brilliant cast.,1,fresh,1,52,5,7.7e-06
+m/elf,Elf,"A terrific movie, smart and funny enough to hold up at any time of year.",1,fresh,1,46,5,7.1e-06
+m/flower_of_evil,The Flower of Evil,"Uninteresting characters, slow storytelling and the deadly dullness of the film's overall talky quality ... take away any potential sting that the Gallic helmer had envisioned for his big-screen critique.",0,rotten,0,68,6,9.800000000000001e-06
+m/the_holiday,The Holiday,Might be considered a decent date movie... but only if guys were allowed to leave their testicles at home.,0,rotten,0,51,6,8.1e-06
+m/teenage_mutant_ninja_turtles_out_of_the_shadows,Teenage Mutant Ninja Turtles: Out of the Shadows,"A loud, unattractive and most likely successful sequel to the 2014 hit.",0,rotten,0,46,6,7.6e-06
+m/september_issue,The September Issue,"It's the relationship between Coddington and her boss, the icy, remote Wintour -- a genius of another sort -- that makes The September Issue so fascinating.",1,fresh,1,62,5,8.700000000000001e-06
+m/1196221-quarantine,Quarantine,There's never a dull moment in 'Quarantine.',1,fresh,1,39,5,6.4e-06
+m/mapplethorpe,Mapplethorpe,"Even though Mapplethorpe is not a documentary, it has elements that make you feel like you are watching one.",1,rotten,0,53,6,8.3e-06
+m/serving_sara,Serving Sara,"The dialogue is witless, the situations are lame, the humor juvenile and the chemistry between the stars nonexistent.",0,rotten,0,51,6,8.1e-06
+m/wadjda_2013,Wadjda,"Rather than making a grand political statement, the film excels in its quieter and more intimate moments.",1,fresh,1,48,5,7.300000000000001e-06
+m/1098149-patriot,The Patriot,The fireworks amount to little more than a fizzle.,0,rotten,0,40,6,7.000000000000001e-06
+m/must_love_dogs,Must Love Dogs,The film's curdled aftertaste is so frustrating that it may be hard to remember why Must Love Dogs ever seemed so endearing and entertaining in the first place.,0,rotten,0,63,6,9.3e-06
+m/frozen_2013,Frozen,"Disney are riding a new, confident wave at the moment, and Frozen is a new height.",1,fresh,1,48,5,7.300000000000001e-06
+m/pans_labyrinth,Pan's Labyrinth,The magic that many films promise actually works in Pan's Labyrinth.,1,fresh,1,43,5,6.800000000000001e-06
+m/the_strangers_prey_at_night,The Strangers: Prey At Night,"Roberts has built a playground of horror homages... It might feel like a hell of a long wait to finally get to the attractions, but once you do, the ride sure is fun.",0,fresh,1,67,5,9.2e-06
+m/she_hate_me,She Hate Me,Two movies mashed together.,0,rotten,0,34,6,6.4e-06
+m/deck_the_halls,Deck the Halls,"A low in soulless Hollywood Christmas movies, and more celebration of consumerism than condemnation.",0,rotten,0,48,6,7.8e-06
+m/heal_the_living,Heal the Living (Réparer les vivants),"A heartbreakingly beautiful film, ""Heal the Living"", demonstrates the immense power of selfless giving.",1,fresh,1,49,5,7.4e-06
+m/but_im_a_cheerleader,But I'm a Cheerleader,"But I'm a Cheerleader is the kind of film that John Waters would have made years ago, it's borderline offensive, yet heartwarming.",1,fresh,1,56,5,8.1e-06
+m/butcher_boy,The Butcher Boy,For a great part of the movie Francie just seems like a loud obnoxious kid with a big head,0,rotten,0,50,6,8.000000000000001e-06
+m/the_odd_life_of_timothy_green,The Odd Life of Timothy Green,Writer-director Peter Hedges' family fantasy drama is sentimental and slickly produced--as well as thinly plotted and somewhat thematically disquieting.,0,rotten,0,60,6,9e-06
+m/1098149-patriot,The Patriot,has its moments,0,fresh,1,32,5,5.7e-06
+m/sisters_2015,Sisters,Casting Amy Poehler and Tina Fey as sisters is an irresistible idea that should have been resisted until a better script came along.,0,rotten,0,54,6,8.400000000000001e-06
+m/10004504-ultraviolet,Ultraviolet,"Derivative, adolescent tosh.",0,rotten,0,36,6,6.6e-06
+m/hesher,Hesher,"Sundancey redemption-trajectory aside, the film is often unsentimentally tough and committed.",1,fresh,1,48,5,7.300000000000001e-06
+m/live_by_night,Live By Night,"I'm fond of Affleck, who normally can be counted on, at the very least, to radiate movie-star vanity. Here, he's like a waxwork version of himself. He looks very, very tired.",0,rotten,0,72,6,1.02e-05
+m/rush_2013,Rush,It won't matter if you've never cared about racing before. Just sit back and enjoy Howard's latest exhilarating effort based on the real life story of one of the most competitive rivalries in sports history.,1,fresh,1,68,5,9.3e-06
+m/tears_of_the_sun,Tears of the Sun,"It's unlikely that this film will be nominated for any awards, but it will keep your interest for the duration.",1,fresh,1,51,5,7.6e-06
+m/afghan_star,Afghan Star,"If nothing else, Afghan Star offers a reminder of how much has changed in Afghanistan from the late '70s -- when Kabul was a secular-oriented city with co-ed universities and a thriving nightclub scene -- to the rise of the Taliban.",1,fresh,1,76,5,1.0100000000000002e-05
+m/deck_the_halls,Deck the Halls,"Does anybody in Hollywood celebrate Christmas anymore? You have to wonder, with the woeful Christmas fare that has been hurled at us the past few years.",0,rotten,0,61,6,9.100000000000001e-06
+m/1103231-gift,The Gift,The movie has an impressive cast. Blanchett is a terrific actress who deserves better than this.,0,rotten,0,48,6,7.8e-06
+m/what_men_want_2019,What Men Want,"Movies about women shouldn't only be retreads of male stories, but Taraji P. Henson and Tina Gordon's script make What Men Want nuanced enough to resonate with female viewers.",1,fresh,1,65,5,9e-06
+m/brothers_grimm,The Brothers Grimm,"The film seems almost intentionally bad in most ways, as if Gilliam were expressing a suicide wish for his directing career.",0,rotten,0,53,6,8.3e-06
+m/lonesome_jim,Lonesome Jim,"There's only so long you can watch this guy mope around without wanting to scream, 'Dude, what's your problem?'",0,rotten,0,54,6,8.400000000000001e-06
+m/adoration,Adoration,[Egoyan's] point of view has rarely been so laughably retrograde.,0,rotten,0,47,6,7.7e-06
+m/the-foot-fist-way,The Foot Fist Way,"Martial arts ""comedy"" is crude, mean and unfunny.",0,rotten,0,44,6,7.4e-06
+m/monsters_inc,"Monsters, Inc.","Pixar does not disappoint, as though anyone expected them to.",1,fresh,1,41,5,6.600000000000001e-06
+m/chico_and_rita,Chico & Rita,"Unfortunately, an evocative setting--the evolution of Afro-Cuban jazz in Havana and New York--sets the stage for a rather slight romance.",0,rotten,0,58,6,8.8e-06
+m/amelie,Amélie,"A madcap, zippy, endlessly imaginative tale.",1,fresh,1,40,5,6.5000000000000004e-06
+m/the_highwaymen,The Highwaymen,"Movies about violence rarely deal with its psychological consequences. Just pull the trigger and move on. In ""The Highwaymen,"" the filmmakers give violence its due.",1,fresh,1,60,5,8.5e-06
+m/gi_joe_retaliation,G.I. Joe: Retaliation,"Dwayne Johnson and Bruce Willis provide performances that should be in the hall of shame under the category ""Best example of going through the motions for a paycheck.""",0,rotten,0,60,6,9e-06
+m/1103231-gift,The Gift,"Unlike What Lies Beneath, whose slick style revived the derivative tale, The Gift is a leaden narrative unrelieved by the heavy application of theatrics or atmospherics.",0,rotten,0,65,6,9.5e-06
+m/transporter_2,Transporter 2,"Transporter 2 is faster than a speeding jet ski, more powerful than a hidden motive and cheesier than a Camembert factory.",0,fresh,1,57,5,8.200000000000001e-06
+m/hit_and_run_2012,Hit & Run,"(A) comedy without laughs, a thriller without same.",0,rotten,0,41,6,7.100000000000001e-06
+m/think_like_a_man_too,Think Like a Man Too,Dark and darkly funny celebration of music's power to transform us. GOODFELLAS meets DREAMGIRLS.,1,fresh,1,53,5,7.8e-06
+m/valentines_day_2010,Valentine's Day,The dire romantic comedy Valentine's Day is neither romantic nor remotely comedic.,0,rotten,0,42,6,7.2e-06
+m/diplomatie,Diplomacy,"The film's a little too flashy and theatrical, with too-neat ironies. As a duel between acting talents, though, this is first-rate.",1,fresh,1,60,5,8.5e-06
+m/blue_caprice_2013,Blue Caprice,"Moors turns the project into something of an art film, requiring patience for repetitive editing and slow-burn scenes before the movie ultimately works itself under your skin.",1,fresh,1,61,5,8.6e-06
+m/blue_velvet,Blue Velvet,A fascinating and perplexing exploration of everything that lies just under the surface of all of us.,1,fresh,1,48,5,7.300000000000001e-06
+m/1194515-ice_age_dawn_of_the_dinosaurs,Ice Age: Dawn of the Dinosaurs (Ice Age 3),Ice Age: Dawn of the Dinosaurs is the best of the three films about our friends in the inter-species herd of plucky prehistoric heroes.,1,fresh,1,59,5,8.400000000000001e-06
+m/mcfarland_usa,McFarland USA,"If they gave Oscars for overcoming mechanical plotting and perfunctory dialogue, Mr. Costner would be this year's shoo-in.",0,rotten,0,55,6,8.5e-06
+m/hot_fuzz,Hot Fuzz,"It's its own unique creature... [but] just as visually lively, just as crammed full of clever and literate wordplay, just as screamingly hilarious as Shaun of the Dead.",1,fresh,1,67,5,9.2e-06
+m/gi_joe_retaliation,G.I. Joe: Retaliation,"Tea Party paranoia about Obama's alien identity and fascist agenda apparently motivated this disappointing sequel, which pits the Joes against an impostor U.S. president (Jonathan Pryce) working for the evil forces of Cobra.",0,rotten,0,72,6,1.02e-05
+m/touch-the-sound,Touch The Sound,"Rewarding, thought-provoking and subtly visceral.",1,fresh,1,38,5,6.300000000000001e-06
+m/slow_west_2015,Slow West,"Using an economy of dialogue and striking visuals, Maclean tells a simple but soulful story that hits you with bursts of bloodshed and sharp gallows humor.",1,fresh,1,60,5,8.5e-06
+m/the_hunting_of_the_president,The Hunting of the President,A sobering chronicle of the depressing circus of persecution and pseudo-scandal that was the Clinton years.,1,fresh,1,50,5,7.500000000000001e-06
+m/john_dies_at_the_end,John Dies at the End,"Sort of like if Franz Kafka drank a bunch of absinthe and then wrote an homage to Sam Raimi, Bill & Ted's Excellent Adventure and Donnie Darko. And that's a good thing",1,fresh,1,68,5,9.3e-06
+m/brothers_of_the_head,Brothers of the Head,"This is a very tender portrayal of young people caught up in a blisteringly fast and cynical world, and though their music is hideous, they are a compelling act.",1,fresh,1,63,5,8.8e-06
+m/down_in_the_valley,Down in the Valley,"The values of past and present collide in this beautifully shot, finely acted reexamination of the American Dream.",1,fresh,1,51,5,7.6e-06
+m/a_most_wanted_man,A Most Wanted Man,"Corbijn gives ""A Most Wanted Man"" the momentum of a thriller but Hoffman's subtle performance gives it the depth of a melancholy character portrait.",1,fresh,1,59,5,8.400000000000001e-06
+m/elf,Elf,A cheerfully inoffensive cinematic bauble that may be no more durable than a tree ornament but should charm the parents and kids who will flock to it.,1,fresh,1,61,5,8.6e-06
+m/goat_2016,Goat,"An intense, punishing watch that shines a harsh light over a culture amongst fraternities that many will not have been aware of before indulging in this endeavour.",1,fresh,1,61,5,8.6e-06
+m/mona_lisa_smile,Mona Lisa Smile,It's a movie that gets to rail against injustice without making anyone in the audience feel the slightest bit uncomfortable.,0,rotten,0,50,6,8.000000000000001e-06
+m/civil_action,A Civil Action,There's much to enjoy in A Civil Action.,1,fresh,1,38,5,6.300000000000001e-06
+m/butcher_boy,The Butcher Boy,One of the year's best.,1,fresh,1,35,5,6e-06
+m/rocknrolla,RocknRolla,"[Ritchie's] latest effort has the sprawling cast of characters and all the convolutions you'd expect, but none of the wit or joy necessary to distract from its shallowness.",0,rotten,0,66,6,9.600000000000001e-06
+m/september_issue,The September Issue,You're thinking this is the ultimate chick flick? You would be wrong.,1,rotten,0,43,6,7.3e-06
+m/but_im_a_cheerleader,But I'm a Cheerleader,The director has brewed a farce around Lyonne's Megan that manages to squander the tomboy-in-chiffon well before it grows a heart and falls away.,0,rotten,0,62,6,9.2e-06
+m/she_hate_me,She Hate Me,"Targets 'the decline of ethics ... from the boardroom to the bedroom,' and misses on both fronts.",0,rotten,0,50,6,8.000000000000001e-06
+m/wild_target,Wild Target,"Nighy so far outclasses this film that it makes you shake your head sadly at the waste of his talent...wan, weak, thin fare.",0,rotten,0,60,6,9e-06
+m/tomorrow_never_dies,Tomorrow Never Dies,"Tomorrow Never Dies is as overproduced as one of Carver's cable broadcasts -- incredibly noisy, flashy and busy without being terribly exciting.",0,rotten,0,57,6,8.700000000000001e-06
+m/rocknrolla,RocknRolla,Perhaps Ritchie has improved over the past 10 years -- or perhaps any movie would look good after the execrable Swept Away and Revolver -- because Ritchie's latest gangland comedy RocknRolla is far and away his best work.,1,fresh,1,80,5,1.0500000000000001e-05
+m/american_in_paris,An American in Paris,A musical both ludicrously overpraised (especially in Hollywood) and underrated.,1,fresh,1,47,5,7.2000000000000005e-06
